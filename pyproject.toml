@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "inertia"
+version = "0.1.0"
+description = ""
+authors = ["jeme shaheen <47688567+ahmedshaheen201400721@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1.5"
+inertia-django = "^1.1.0"
+django-vite = "^3.0.6"
+django-js-routes = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
