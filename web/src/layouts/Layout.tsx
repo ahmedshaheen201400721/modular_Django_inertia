@@ -1,6 +1,9 @@
 import { Link } from '@inertiajs/react'
+import { usePage } from '@inertiajs/react'
 
 export default function Layout({ children }) {
+  const page = usePage()
+  console.log(page);
   return (
     <main>
       <header>
