@@ -17,7 +17,7 @@
       "jsx": "react-jsx",
       "types": ["vite/client"],
     },
-    "include": ["./web/src","./*/pages"],
-    "exclude": ["project","node_modules"]
+    "include": ["project/web/src","./*/pages"],
+    "exclude": ["node_modules"]
 
 }

@@ -11,10 +11,10 @@ export default defineConfig({
     }),
   ],
   build: {
-    outDir: resolve('./web/dist'),
+    outDir: resolve('./project/web/dist'),
     manifest: "manifest.json",
     rollupOptions: {
-      input: './web/src/main.jsx',
+      input: './project/web/src/main.jsx',
     },
   },
   server: {

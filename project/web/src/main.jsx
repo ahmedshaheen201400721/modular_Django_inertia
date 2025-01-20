@@ -7,13 +7,13 @@ import Layout from "./layouts/Layout";
 document.addEventListener('DOMContentLoaded', () => {
     createInertiaApp({
       resolve: (name) => {
-        const pages = import.meta.glob( "../../*/pages/**/*.tsx",{ eager: true });
+        const pages = import.meta.glob( "../../../*/pages/**/*.tsx",{ eager: true });
         const regex = /([^:]+)::(.+)/;
         const matches = regex.exec(name);
         const module = matches[1]
         const pageName = matches[2];
 
-        let page = pages[`../../${module}/pages/${pageName}.tsx`]
+        let page = pages[`../../../${module}/pages/${pageName}.tsx`]
         page.default.layout = page.default.layout || (page => <Layout children={page} />)
         return page;
       },

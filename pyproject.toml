@@ -11,6 +11,7 @@ django = "^5.1.5"
 inertia-django = "^1.1.0"
 django-vite = "^3.0.6"
 django-js-routes = "^0.2.0"
+python-decouple = "^3.8"
 
 
 [build-system]
