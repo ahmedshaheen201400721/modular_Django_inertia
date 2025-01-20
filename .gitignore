@@ -12,6 +12,12 @@ pip-log.txt
 pip-delete-this-directory.txt
 # env
 .env
+*.lock
+package-lock.json
+*.iml
+*.bak
+*.tmp
+*.pid
 
 # Django stuff:
 *.log
@@ -33,11 +39,25 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Minimal NodeJS
-dist
+# Frontend (React/Vite)
 node_modules
+/dist/
 dist-ssr
+dist
 *.local
+/.vite/
+/.cache/
+/coverage/
+/build/
+/out-tsc/
+*.tsbuildinfo
+
+
+# Testing
+/coverage/
+/htmlcov/
+.pytest_cache/
+junit.xml
 
 # Editor directories and files
 .vscode/*
